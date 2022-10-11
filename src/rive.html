@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>My First Parcel App</title>
+  </head>
+  <body>
+    <h1>Hello, World!</h1>
+    <canvas id="canvas0" style="height: 500px; width: 500px;" width=1000 height=1000></canvas>
+    <script src="https://unpkg.com/@rive-app/canvas"></script>
+    <script>
+      for (let i = 0; i < 1; i++) {
+        new rive.Rive({
+          src: 'https://public.uat.rive.app/hosted/42156/1054/HY6j9wHrJkyGYuB_RyH3Fw.riv', // host your Rive file and add the url to src 
+          canvas: document.getElementById('canvas' + i),
+          autoplay: true,
+          layout: new rive.Layout({fit: 'cover', alignment: 'center'}),
+        })
+      }
+    </script>
+  </body>
+</html>

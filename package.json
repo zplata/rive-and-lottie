@@ -1,0 +1,17 @@
+{
+  "name": "rive-lottie-parcel",
+  "source": "src/index.html",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "devDependencies": {
+    "parcel": "^2.7.0"
+  },
+  "dependencies": {
+    "@lottiefiles/lottie-js": "^0.4.1",
+    "@lottiefiles/lottie-player": "^1.5.7",
+    "@rive-app/canvas": "^1.0.88"
+  }
+}
