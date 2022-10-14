@@ -6,11 +6,15 @@
   </head>
   <body>
     <h1>Hello, World!</h1>
-    <canvas id="canvas0" style="height: 500px; width: 500px" width="1000" height="1000"></canvas>
-    <script src="https://unpkg.com/@rive-app/canvas"></script>
+    <canvas id="canvas0" height="1000" width="1000" style="height: 500px; width: 500px"></canvas>
+    <script src="https://unpkg.com/@rive-app/canvas@latest"></script>
     <script>for(let i = 0; i < 1; i++)new rive.Rive({
-    src: "https://public.uat.rive.app/hosted/42156/1058/8x9SFV7B2Ee4LcdjfDePHQ.riv",
+    src: "https://public.rive.app/hosted/40846/11373/jb-r1m2WqEyusZFM4ClF_A.riv",
     canvas: document.getElementById("canvas" + i),
+    artboard: "Main",
+    stateMachines: [
+        "State Machine 1"
+    ],
     autoplay: true,
     layout: new rive.Layout({
         fit: "cover",
