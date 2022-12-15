@@ -3,25 +3,29 @@
   <head>
     <meta charset="utf-8">
     <title>My First Parcel App</title>
+    <script src="https://unpkg.com/@rive-app/canvas@latest"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/index.4d663569.css">
   </head>
   <body>
-    <h1>Hello, World!</h1>
-    <canvas id="canvas0" height="1000" width="1000" style="height: 500px; width: 500px"></canvas>
-    <script src="https://unpkg.com/@rive-app/canvas@latest"></script>
-    <script>for(let i = 0; i < 1; i++)new rive.Rive({
-    src: "https://public.rive.app/hosted/40846/11373/jb-r1m2WqEyusZFM4ClF_A.riv",
-    canvas: document.getElementById("canvas" + i),
-    artboard: "Main",
-    stateMachines: [
-        "State Machine 1"
-    ],
-    autoplay: true,
-    layout: new rive.Layout({
-        fit: "cover",
-        alignment: "center"
-    })
-});
-
-</script>
-  <script src="/rive.bc0e370d.js"></script></body>
+    <div class="container">
+      <div class="drop-container">
+        <div class="center-container">
+          <p class="container-text">
+            Drag and drop your Rive file here
+          </p>
+          <div class="stats-container">
+            <div class="file-size"></div>
+            <div class="perf-helper-text">
+              See more <a href="https://github.com/zplata/rive-and-lottie#how-to-measure-performance">here</a> for how to measure other performance metrics
+            </div>
+          </div>
+        </div>
+        <canvas id="rive-canvas" style="height: 500px; width: 500px"></canvas>
+      </div>
+    </div>
+    <script src="/rive.0641b553.js" defer=""></script>
+  </body>
 </html>

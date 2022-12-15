@@ -7,11 +7,13 @@
     "build": "parcel build --dist-dir docs"
   },
   "devDependencies": {
+    "@parcel/optimizer-data-url": "^2.7.0",
+    "@parcel/transformer-inline-string": "^2.7.0",
     "parcel": "^2.7.0"
   },
   "dependencies": {
     "@lottiefiles/lottie-js": "^0.4.1",
     "@lottiefiles/lottie-player": "^1.5.7",
-    "@rive-app/canvas": "^1.0.88"
+    "@rive-app/canvas": "^1.0.95"
   }
 }

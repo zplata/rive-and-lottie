@@ -1,0 +1,118 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #BFCDE0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1, h3 {
+  margin-top: 0;
+}
+
+.home-container {
+  font-family: 'Roboto Mono', monospace;
+  margin: 0 auto;
+  max-width: 800px;
+  color: #000000;
+  text-align: center;
+  min-height: 100vh;
+  padding: 8px 32px;
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 32px;
+}
+
+.center-container {
+  font-family: 'Roboto Mono', monospace;
+  text-align: center;
+}
+
+.container-text {
+  font-weight: 500;
+}
+
+.drop-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  height: 600px;
+  border: 2px dashed black;
+  background-color: #ffffff;
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+
+  padding-bottom: 50px;
+}
+.lottie-container {
+  width: 100%;
+  height: 600px;
+  border: 2px dashed black;
+
+  padding-bottom: 50px;
+}
+
+.perf-helper-text {
+  display: none;
+}
+
+lottie-player {
+  margin: 0 auto;
+}
+
+#rive-canvas {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  max-width: 300px;
+  background-color: #5D5D81;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  position: relative;
+  padding: 16px 4px;
+}
+
+.card a {
+  color: #ffffff;
+}
+
+.card-body {
+  padding: 0 16px;
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+  justify-content: space-between;
+}
+.card-title {
+  font-size: 18px;
+}
+
+.card-text {
+  font-size: 14px;
+}
+
+.rive-image {
+  width: 300px;
+  height: 150px;
+}
