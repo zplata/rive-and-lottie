@@ -71,7 +71,7 @@ async function main() {
       "https://public.rive.app/hosted/40846/11373/jb-r1m2WqEyusZFM4ClF_A.riv";
     currentRiveInstance = new rive.Rive({
       src: url, // host your Rive file and add the url to src
-      canvas: document.getElementById("rive-canvas"),
+      canvas: riveCanvas,
       artboard: "Main",
       stateMachines: ["State Machine 1"],
       autoplay: true,
@@ -81,6 +81,19 @@ async function main() {
         currentRiveInstance.resizeDrawingSurfaceToCanvas();
       },
     });
+
+    // Detect zoom and resize canvas area smoothly
+    window.addEventListener(
+      "resize",
+      () => {
+        const dpr = window.devicePixelRatio || 1;
+        const { width, height } = riveCanvas.getBoundingClientRect();
+        riveCanvas.width = dpr * width;
+        riveCanvas.height = dpr * height;
+        currentRiveInstance.resizeDrawingSurfaceToCanvas();
+      },
+      false
+    );
   }
 
   if (player) {
